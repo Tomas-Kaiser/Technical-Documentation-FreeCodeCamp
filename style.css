@@ -56,3 +56,30 @@ pre {
    background-color: #eee;
    width: calc(100% - 20px);
  }
+
+ /*
+*
+** Media Query
+*
+*/
+
+@media only screen and (max-width: 1028px) {
+  body {
+      display: block;
+  }
+
+  header {
+    width: 100%;
+    position: static;
+  }
+
+  header nav ul {
+    height: 250px;
+  }
+
+  main {
+    position: static;
+    left: 0;
+    width: calc(100% - 20px);
+  }
+}
