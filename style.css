@@ -13,6 +13,8 @@ body {
 header {
    width: 20%;
    position: fixed;
+   overflow-y: auto;
+   height: 100%;
    
 }
 
@@ -23,9 +25,6 @@ header nav h1 {
 header nav ul {
    list-style-type: none;
    padding: 0;
-   overflow: scroll;
-   overflow-x: hidden;
-   height: 6  00px;
 }
 
 header nav ul a {
