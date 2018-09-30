@@ -12,22 +12,29 @@ body {
 
 header {
    width: 20%;
+   position: fixed;
+   
 }
 
-header h1 {
+header nav h1 {
    text-align: center;
 }
 
 header nav ul {
    list-style-type: none;
+   padding: 0;
+   overflow: scroll;
+   overflow-x: hidden;
+   height: 500px;
 }
 
 header nav ul a {
    text-decoration: none;
 }
 
-main {
-   width: 80%;
+header nav ul li {
+  border-top: 1px solid black;
+  padding: 15px 15px 15px 35px;
 }
 
 /*
@@ -36,14 +43,16 @@ main {
 *
 */
 
+main {
+  width: calc(80% - 20px);
+  position: relative;
+  left: 20%;
+  margin: 0 10px 0 10px;
+}
+
 pre {
    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-   margin-bottom: 10px;
-   overflow: auto;
-   width: auto;
-   padding: 5px;
+   margin: 0 10px 10px 10px;
    background-color: #eee;
-   width: 650px;
-   padding-bottom: 20px;
-   max-height: 600px;
+   width: calc(100% - 20px);
  }
